@@ -24,6 +24,7 @@ class MeuApp(App):
                 padding=[40, 20, 40, 20])
         
         layout.add_widget(Label(text='Hello by Kivy!'))
+        layout.add_widget(Label(text='Botão Novo!'))
         btn = Button(text='Pressione-me!', size=(100,50))
         
         btn.bind(on_press=soma_um)
