@@ -15,7 +15,7 @@ kivy.require('1.9.1')
 var = 0
 def soma_um(instance):
     global var
-    var += 1
+    var += 2
     instance.text = instance.text + str(var)    
     
 class MeuApp(App):
