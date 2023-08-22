@@ -16,7 +16,7 @@ var = 0
 def soma_um(instance):
     global var
     var += 1
-    instance.text = str(var)    
+    instance.text = instance.text + str(var)    
     
 class MeuApp(App):
     def build(self):
@@ -24,7 +24,7 @@ class MeuApp(App):
                 padding=[40, 20, 40, 20])
         
         layout.add_widget(Label(text='Hello by Kivy!'))
-        layout.add_widget(Label(text='Botão Novo!'))
+        layout.add_widget(Label(text='New Label!'))
         btn = Button(text='Pressione-me!', size=(100,50))
         
         btn.bind(on_press=soma_um)
